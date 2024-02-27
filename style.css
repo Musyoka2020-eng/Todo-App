@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: #03a9f4;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out;
+}
+
+form button:hover {
+    background: #0b7dda;
+}
+
+#todos {
+    margin-top: 20px;
+}
+
+.todo {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo p {
+    margin: 0;
+}
+
+.todo p span {
+    font-size: 16px;
+    color: #888;
+    margin-right: 5px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.finished {
+    background-color: #acf4af;
+}
+
+.actions button {
+    padding: 5px 10px;
+    border: 0;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 3px;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.actions button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.actions button:hover {
+    opacity: 0.5;
+}
+
+.actions .edit {
+    background-color: #03a9f4;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.actions .done {
+    background-color: #4caf50;
+    color: #fff;
+    margin-right: 10px;
+
+}
+
+.actions .delete {
+    background-color: #e74c3c;
+    color: #fff;
+}

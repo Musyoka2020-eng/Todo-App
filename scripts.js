@@ -67,7 +67,7 @@ function renderTodoItem(todo) {
     });
 
     doneBtn.addEventListener('click', () => {
-        confirm('Are you sure you want to mark this todo as done?', 'Yes', 'No');
+        confirm('Are you sure you want to complete this action?', 'Yes', 'No');
         const todoItem = doneBtn.closest('.todo');
         toggleDone(todoItem, todo.id);
     });
